@@ -338,19 +338,19 @@ async function resetpassword({ username, email }) {
                 </div>
                 `;
     let transporter = nodemailer.createTransport({
-        service: 'Godaddy',
+        service: 'XXX',
         host: 'smtpout.asia.secureserver.net',
         port: 465,
         secureConnection: true, // true for 465, false for other ports
         auth: {
-            user: "admin@socialcob.com", // generated ethereal user
-            pass: "4078#Admin" // generated ethereal password
+            user: "admin@xxx.com", // generated ethereal user
+            pass: "Password" // generated ethereal password
         }
     });
 
     // setup email data with unicode symbols
     let mailOptions = {
-        from: '"socialcob" <admin@socialcob.com>', // sender address
+        from: '"XXX" <admin@XXX.com>', // sender address
         to: userexists.email, // list of receivers
         subject: 'Password Reset', // Subject line
         text: 'We found it', // plain text body
